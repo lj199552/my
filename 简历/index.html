@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, uc-fitscreen=yes, user-scalable=0;"name="viewport"/>
+    <meta name="apple-touch-fullscreen"content="yes"/>
+    <meta name="apple-mobile-web-app-capable"content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style"content="black-translucent"/>
+    <meta name="format-detection"content="telephone=no"/>
+    <meta http-equiv="Cache-Control"content="no-cache"/>
+    <link rel="stylesheet" href="index.css" type="text/css">
+    <title>my job</title>
+</head>
+<body>
+    <div class="wrap" id="wrap">
+        <!--music-->
+        <div class="music">
+            <span class="left-music"></span><span class="right-music"></span><span class="line1"></span><span class="line2"></span><span class="line3"></span>
+            <div class="close">
+            </div>
+        </div>
+        <!--musicEnd-->
+        <div class="main cur">
+            <div class="no1-user-pc-hao">
+                <span></span>
+            </div>
+            <p class="no1-user"><strong>李骏</strong></p>
+            <p class="no1-content">web高级前端工程师</p>
+            <ul class="information">
+                <li>
+                    <span class="value">性别：</span>
+                    <span class="key">男</span>
+                </li>
+                <li>
+                    <span class="value">专业：</span>
+                    <span class="key">动漫设计</span>
+                </li>
+                <li>
+                    <span class="value">学历：</span>
+                    <span class="key">大专</span>
+                </li>
+                <li>
+                    <span class="value">求职意向：</span>
+                    <span class="key">web高级前端工程师</span>
+                </li>
+                <li>
+                    <span class="value">phone：</span>
+                    <a class="key" href="tel:18756972936">18756972936</a>
+                </li>
+                <li>
+                    <span class="value">e-mial：</span>
+                    <span class="key">1147343602@qq.con</span>
+                </li>
+                <li>
+                    <span class="value">籍贯：</span>
+                    <span class="key">安徽安庆</span>
+                </li>
+            </ul>
+        </div>
+        <div class="main">
+            <div class="linex"></div>
+            <div class="liney"></div>
+            <div class="skill">
+                <h3>专业知识</h3>
+                <ul>
+                    <li>熟练掌握html、div+css，能够手写符合w3c标准的页面代码；能够很好的把握IE6+及其他主流浏览器的兼容性问题。</li>
+                    <li>熟练javaScript，掌握常用的插件(Echarts，jQuery  validate、jQuery....、Iscroll)以提高工作效率。可根据项目需求用原生js写针对特定问题的库，熟悉jquery、bootStrap、amazeUI、Zepto、jQuery mobile。</li>
+                    <li>熟悉js面向对象中的继承、封装、单体模式、工厂模式、原型模式等，坚持降低程序耦合度、提高代码复用性的设计理念，使代码高度模块化。</li>
+                    <li>能运用html5、css3进行移动端的页面开发,了解手机APP前端设计流程，能完成产品的屏幕自适应、响应式网页设计</li>
+                    <li>熟练运用ajax技术与后台处理数据，熟悉浏览器和服务器交互机制，依据接口文档与后台进行交互,了解php、mysql相关技术。</li>
+                </ul>
+            </div>
+        </div>
+        <div class="main">
+            <div class="no1-user-pc-hao">
+                <span></span>
+            </div>
+            <p class="no1-user"><strong>李骏</strong></p>
+            <p class="no1-content">web高级前端工程师</p>
+            <h3 class="exp">工作经历</h3>
+            <ul class="exp-content">
+                <li><strong>2014/10-- 至今</strong>XX公司<br>
+<strong>职    务：</strong>web前端开发工程师<br>
+<strong>专业技能：</strong>熟悉js面向对象中的继承、封装、单体模式、工厂模式、原型模式等，坚持降低程序耦合度、提高代码复用性的设计理念，使代码高度模块化。能运用html5、css3进行移动端的页面开发,了解手机APP前端设计流程，能完成产品的屏幕自适应、响应式网页设计。</li>
+</li>
+            </ul>
+        </div>
+        <div class="main">
+            <h3 class="intention">求职意向</h3>
+            <ul class="intention-content">
+                <li><strong>工作性质：</strong>全职</li>
+                <li><strong>期望职位：</strong>web前端开发、移动互联网开发</li>
+                <li><strong>工作地区：</strong>北京</li>
+                <li><strong>目前状况：</strong>已离职</li>
+            </ul>
+            <div class="heart">
+                <p>期待着与你们一起创造辉煌</p>
+                <p>亲们，请叫我李骏</p>
+                <p>我们是兄弟，是战友</p>
+                <p>期待着我们携手走过今天，创造美好的明天</p>
+                <p>call me <a class="key" href="tel:18756972936">18756972936</a></p>
+            </div>
+        </div>
+        <div style="z-index: 99;"class="direction dir_up">
+            <img src="images/isdown.png"class="attr">
+        </div>
+        <audio autoplay=""id="myaudio"style="height:0"src=""loop="loop"/>
+    </div>
+    <script>
+        var jobInfo={
+            hasMus:false,
+            newCalss:function  (ele) {
+                var ele=ele||{};
+                if(this.hasMus==false){
+                    this.init.prototype=jobInfo;
+                    this.hasMus=true;
+                }
+                return new this.init(ele);
+            },
+            prevP:function  (ele) {
+                var _this=this;
+                if(_this.item==0){
+                    _this.item=_this.length-1;
+                }else{
+                    _this.item--;
+                };
+                _this.addAnimation(_this.item,false);
+            },
+            nextP:function  (ele) {
+                var _this=this;
+                _this.item++;
+                if(_this.item==_this.length){
+                    _this.item=0;
+                }
+                _this.addAnimation(_this.item,true);
+            },
+            addAnimation:function (items,flag) {
+                var _this=this;
+                for(var i=0;i<_this.length;i++){
+                    _this.mainDiv[i].className="main";
+                }
+                if(flag==false){
+                    _this.mainDiv[items].className="main animation";
+                }else{
+                    _this.mainDiv[items].className="main animation2";
+                }
+                info.hide();
+                switch (_this.item) {
+                    case 0:
+                        info.information()
+                        break;
+                    case 1:
+                        linex.style.width="100%";
+                        liney.style.height="100%";
+                        info.informationKill()
+                        break;
+                    case 2:
+                        info.informationExp()
+                        break;
+                    case 3:
+                        info.informationHeart()
+                        break;
+                }
+            },
+            addClass: function(ele, cname) {
+                var reg = new RegExp("(?:^| +)" + cname + "(?: +|$)");
+                if (!reg.test(ele.className)) {
+                    ele.className += " " + cname
+                }
+            },
+            removeClass: function(ele, cname) {
+                var reg = new RegExp("(?:^| +)" + cname + "(?: +|$)");
+                if (reg.test(ele.className)) {
+                    ele.className = ele.className.replace(reg, " ")
+                }
+            },
+            bindTouch:function (ele) {
+                var _this = this;
+                var page = {
+                    x:0,
+                    y:0
+                };
+                _this.wrap.addEventListener("touchstart",function(e){
+                    page.x=e.changedTouches[0].pageX;
+                    page.y=e.changedTouches[0].pageY;
+                });
+                _this.wrap.addEventListener("touchend",function(e){
+                    var endPageX =e.changedTouches[0].pageX-page.x;
+                    var endPageY =e.changedTouches[0].pageY-page.y;
+                    if(Math.abs(endPageY)>50){
+                        if(endPageY <0 ){
+                            _this.prevP()
+                        }else{
+                            _this.nextP()
+                        }
+                    }
+                });
+            },
+            startMusic: function() {
+                var _this = this;
+                _this.myAudio.src = "myAudio.mp3";
+                _this.myAudio.play();
+                _this.addClass(_this.music, "musicAdd");
+                _this.close.style.display = "none";
+                _this.timer = setInterval(function() {
+                    _this.randomChange()
+                }, 1000)
+            },
+            stopMusic: function() {
+                var _this = this;
+                /*_this.music.addEventListener("touchstart", function(e) {
+                    e.stopPropagation()
+                });*/
+                _this.music.addEventListener("touchend", function(e) {
+                   // e.stopPropagation();
+                    if (_this.flag) {
+                        _this.myAudio.pause();
+                        clearInterval(_this.timer);
+                        _this.flag = false;
+                        _this.close.style.display = "block";
+                        _this.removeClass(_this.music, "musicAdd");
+                        [].slice.call(_this.allEle, 0).forEach(function(n) {
+                            n.style.background = "#fff"
+                        });
+                        _this.music.style.borderColor = "#fff"
+                    } else {
+                        _this.startMusic();
+                        _this.flag = true
+                    }
+                })
+            },
+            randomChange: function() {
+                var _this = this;
+                var color = _this.getRandom();
+                [].slice.call(_this.allEle, 0).forEach(function(n) {
+                    n.style.background = color
+                });
+                _this.music.style.borderColor = color
+            },
+            getRandom: function() {
+                var rand = Math.floor(Math.random() * 0xFFFFFF).toString(16);
+                if (rand.length == 6) {
+                    return "#" + rand
+                } else {
+                    return this.getRandom()
+                }
+            },
+            init:function  (ele) {
+            var _this=this;
+            _this.item=0;
+            _this.wrap=ele.wrap;
+            _this.length=ele.length;
+            _this.mainDiv=ele.mainDiv;
+            _this.information=ele.information;
+            _this.close = document.querySelector(".close");
+            _this.myAudio = document.getElementById("myaudio");
+            _this.music = document.querySelector(".music");
+            _this.flag = false;
+            _this.startTime = 1;
+            _this.allEle = document.querySelectorAll(".left-music,.right-music,.line1,.line2,.line3");
+            _this.stopMusic();
+            _this.bindTouch();
+        }
+        };
+        var obj={
+            mainDiv:document.getElementsByClassName('main'),
+            wrap:document.getElementById('wrap'),
+            length:document.getElementsByClassName('main').length
+        }
+        jobInfo.newCalss(obj);
+
+        window.onload=function() {
+            info.information()
+        }
+        var information=document.querySelector('.information'); //选择器
+        var title=document.querySelector('.no1-user-pc-hao span');
+        var linex=document.querySelector('.main .linex');
+        var liney=document.querySelector('.main .liney');
+        var skill=document.querySelector('.main .skill');
+        var exp=document.querySelector('.main .exp');
+        var expContent=document.querySelector('.main .exp-content');
+        var heart=document.querySelector('.heart');
+        var info={
+            information:function(){
+                setTimeout(function() {
+                    information.style.display="block";
+                }, 2000);
+                setTimeout(function() {
+                    title.style.display="block";
+                }, 3000);
+
+            },
+            informationKill:function(){
+                setTimeout(function() {
+                     skill.style.display="block";
+                }, 1000);
+            },
+            informationExp:function(){
+                setTimeout(function() {
+                     exp.style.display="block";
+                     expContent.style.display="block";
+                }, 2000);
+            },
+            informationHeart:function(){
+                setTimeout(function() {
+                     heart.style.display="block";
+                }, 2000);
+            },
+            hide:function(){
+                information.style.display="none";
+                title.style.display="none";
+                skill.style.display="none";
+                exp.style.display="none";
+                expContent.style.display="none";
+                heart.style.display="none";
+                linex.style.width="0";
+                liney.style.height="0";
+
+            }
+        }
+    </script>
+</body>
+</html>
